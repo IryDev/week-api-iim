@@ -1,0 +1,60 @@
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#banner .row{
+  padding: 4rem;
+}
+
+.col{
+  width: 40%;
+}
+
+.col h1{
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.col p{
+  margin-bottom: 20px;
+}
+
+.col button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+  header{
+    height: 85vh;
+  }
+
+  #banner .row{
+    padding: 2rem;
+  }
+
+  .col{
+    width: 100%;
+  }
+
+  .col h1{
+    font-size: 30px;
+  }
+}
+
+p.carac{
+  color: #a3a3a3;
+  margin: 1rem 0;
+}
+
+span.spacer{
+  margin: 0 10px;
+}

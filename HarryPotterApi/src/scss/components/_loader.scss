@@ -1,0 +1,31 @@
+.loader {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  animation: loader 1s linear forwards 2s;
+}
+
+.loader img {
+  width: 200px;
+  height: 200px;
+  animation: rotationImg 2s infinite ease-in-out;
+  z-index: 10000;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

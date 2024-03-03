@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px){
+    main.auth {
+        form {
+            min-width: 100%;
+            width: 100%;
+            padding: 1rem;
+            min-height: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 978px) {
+  nav {
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    margin-left: -100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav a {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .nav-active {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__bg--top {
+    height: 100vw;
+    width: 100vw;
+    max-height: 300px;
+    max-width: 300px;
+    z-index: 10;
+  }
+
+  .hero__bg--middle {
+    height: 150vw;
+    width: 150vw;
+    max-height: 800px;
+    max-width: 800px;
+    z-index: 9;
+  }
+
+  .content img {
+    width: 350px;
+    margin: 0;
+  }
+
+  .content a {
+    font-size: 1.5rem;
+  }
+}

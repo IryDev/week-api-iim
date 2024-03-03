@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Harry Potter Cards Collection</title>
+    <meta name="description" content="Harry Potter Cards Collection">
+    <meta name="author" content="Rey Kosso">
+    <link rel="shortcut icon" href="../../public/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../src/css/main.css">
+</head>
+
+<body>
+    <main class="auth">
+        <form action="/login.html" method="POST" id="form" novalidate>
+            <a href="./index.html">
+                <img src="../../src/assets/img/harry logo.png" alt="harry potter logo" class="logo">
+            </a>
+            <div class="login-deco">
+                <hr>
+                <img src="../../src/assets/img/diamonds.svg" alt="diamonds" class="diamonds">
+                <h1>Login</h1>
+                <img src="../../src/assets/img/diamonds.svg" alt="diamonds" class="diamonds">
+                <hr>
+            </div>
+            <label for="email">email address</label>
+            <input aria-label="enter your email address" type="email" name="email" id="email" autocomplete="on"
+                aria-required="true">
+            <p class="email-error">Please enter a valid email</p>
+
+            <label for="password">password</label>
+            <div class="password-container">
+                <div class="eye-container" role="button">
+                    <img src="../../src/assets/icons/hide.png" alt="eye" class="eye">
+                </div>
+                <input type="password" name="password" id="password" autocomplete="off">
+            </div>
+
+            <button class="to-auth" type="submit" name="submit">Log In</button>
+
+            <a href="/auth/google" class="google-btn">
+                <img src="../../src/assets/icons/google.svg" alt="" class="google">sign up with google
+            </a>
+
+            <a href="/auth/x" name="submit" class="x-btn">
+                <img src="../../src/assets/icons/x.png" alt="" class="x">sign up with X
+            </a>
+
+            <a href="/auth/facebook" name="submit" class="facebook-btn">
+                <img src="../../src/assets/icons/facebook.svg" alt="" class="facebook">sign up with Facebook
+            </a>
+
+            <hr>
+            <p>Don't have an account ?</p>
+            <a class="to-auth" href="./register.html">sign up</a>
+        </form>
+    </main>
+
+    <script src="../../src/js/hideShowPassword.js"></script>
+    <script src="../../src/js/loginValidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Harry Potter Cards Collection</title>
+    <meta name="description" content="Harry Potter Cards Collection">
+    <link rel="shortcut icon" href="../../public/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../src/css/main.css">
+</head>
+
+<body>
+    <main class="auth">
+        <form action="/register.html" method="POST" id="form" novalidate>
+            <a href="./index.html">
+                <img src="../../src/assets/img/harry logo.png" alt="harry potter logo" class="logo">
+            </a>
+            <div class="login-deco">
+                <hr>
+                <img src="../../src/assets/img/diamonds.svg" alt="" class="diamonds">
+                <h1>Sign<span>Up</span></h1>
+                <img src="../../src/assets/img/diamonds.svg" alt="" class="diamonds">
+                <hr>
+            </div>
+
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" autocomplete="on">
+            <p class="username-error"></p>
+
+            <label for="email">email address</label>
+            <input type="email" name="email" id="email" autocomplete="on">
+            <p class="email-error"></p>
+
+            <label for="password">password</label>
+            <div class="password-container">
+                <div class="eye-container" role="button">
+                    <img src="../../src/assets/icons/hide.png" alt="eye" class="eye">
+                </div>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <ul class="password-requirements">
+                    <li class="requirement1 fail">Minimum of 8 characters</li>
+                    <li class="requirement2 fail">At least 1 number</li>
+                    <li class="requirement3 fail">Combination of uppercase and lowercase characters</li>
+                    <li class="requirement4 fail">At least 1 special character</li>
+                </ul>
+            </div>
+
+            <label for="confirm-password">confirm password</label>
+            <div class="password-container">
+                <div class="eye-container" role="button">
+                    <img src="../../src/assets/icons/hide.png" alt="eye" class="eye2">
+                </div>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <p class="confirm-password-error"></p>
+            </div>
+
+            <button class="to-auth" type="submit" name="submit">Sign up</button>
+
+            <a href="/auth/google" class="google-btn">
+                <img src="../../src/assets/icons/google.svg" alt="" class="google">sign up with google
+            </a>
+
+            <a href="/auth/x" name="submit" class="x-btn">
+                <img src="../../src/assets/icons/x.png" alt="" class="x">sign up with X
+            </a>
+
+            <a href="/auth/facebook" name="submit" class="facebook-btn">
+                <img src="../../src/assets/icons/facebook.svg" alt="" class="facebook">sign up with Facebook
+            </a>
+
+            <hr>
+            <p>already have an account ?</p>
+            <a class="to-auth" href="./login.html">log in</a>
+        </form>
+    </main>
+
+    <script src="../../src/js/hideShowPassword.js"></script>
+    <script src="../../src/js/registerValidation.js"></script>
+</body>
+
+</html>

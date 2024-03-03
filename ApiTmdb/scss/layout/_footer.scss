@@ -1,0 +1,36 @@
+.info-autour {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  background-color: #181818;
+  width: 800px;
+  height: 150px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 4px 5px black;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  color: white;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .info {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-links ul{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul li{
+  margin-left: 20px;
+}
+.nav-links p{
+  color: white;
+  font-weight: bold;
+}
+
+button{
+  background-color: #e50815;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+button:hover{
+  background-color: #af0610;
+}

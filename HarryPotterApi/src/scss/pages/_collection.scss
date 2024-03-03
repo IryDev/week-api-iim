@@ -1,0 +1,47 @@
+main.collection {
+  background-image: url(../../src/assets/img/shared/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+}
+
+#characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character-card {
+  width: 200px;
+  height: 300px;
+  margin: 2rem;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(28, 30, 40, 0.5);
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
